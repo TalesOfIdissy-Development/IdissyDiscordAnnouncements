@@ -1,0 +1,14 @@
+name: IdissyDiscordAnnouncements
+author: dahpr0gam3r
+main: me.dahpr0gam3r.IdissyDiscordAnnouncements.Main
+version: 1.0.0
+depend: [IdissyCore,DiscordSRV]
+
+commands:
+  discordannounce:
+    description: Announces message to the discord channel provided
+    usage: /<command> channel message
+    aliases: [dannounce,hbar]
+permissions:
+  idissydiscordannouncements.announce:
+    default: op
