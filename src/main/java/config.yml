@@ -21,3 +21,8 @@ channels:
 
 channel-amount: 2
 
+bot:
+  token: ''
+  prefix: '~'
+  currentserver: ''
+  broadcastrole: ''
