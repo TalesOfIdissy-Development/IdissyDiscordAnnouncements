@@ -16,7 +16,7 @@ public class CommandAnnounce implements CommandExecutor {
 
         if (!commandSender.hasPermission("idissydiscordannouncements.announce")) {commandSender.sendMessage(ChatColor.RED + "You do not have the correct Permissions");return true;}
         if (command.getName().equalsIgnoreCase("discordannounce")){
-            if (args.length < 2) { commandSender.sendMessage(ChatColor.RED + "Command usage is as follows: /discordannounce [channel] [message]");}
+            if (args.length<2) { commandSender.sendMessage(ChatColor.RED + "Command usage is as follows: /discordannounce [channel] [message]"); return true;}
             String[] messageArray = Arrays.copyOfRange(args, 1 , args.length);
             String message = String.join(" ", messageArray);
             if (args[0].equalsIgnoreCase(Main.plugin.getConfig().getString("channels.1.name"))){
